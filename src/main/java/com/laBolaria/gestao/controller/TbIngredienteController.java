@@ -39,7 +39,7 @@ public class TbIngredienteController {
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Ingrediente encontrado com sucesso")
     })
-    @GetMapping("/{id]")
+    @GetMapping("/{id}")
     public ResponseEntity<IngredienteResponseDTO> buscarPorId(@Parameter(description = "Identificador único " +
             "para ingrediente", example = "1") @PathVariable Long id){
         return ResponseEntity.ok(ingredienteService.buscarPorId(id));
