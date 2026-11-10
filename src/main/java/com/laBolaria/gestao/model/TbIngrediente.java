@@ -18,7 +18,7 @@ public class TbIngrediente {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     @EqualsAndHashCode.Include
-    private long Id;
+    private Long id;
 
     @Column(name = "nome", nullable = false, length = 100)
     private String nome;
