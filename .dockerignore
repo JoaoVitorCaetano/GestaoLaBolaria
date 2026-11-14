@@ -1,0 +1,6 @@
+target/
+.git/
+.env
+*.md
+src/main/resources/db/
+src/main/java/com/laBolaria/gestao/config/ReceituarioDataSeeder.java
