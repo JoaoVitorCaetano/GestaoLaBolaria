@@ -2,6 +2,8 @@ package com.laBolaria.gestao.model;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 
 import java.math.BigDecimal;
 
@@ -24,6 +26,7 @@ public class TbItemFichaTecnica {
     private TbProduto produto;
 
     @ManyToOne(fetch = FetchType.LAZY)
+    @Fetch(FetchMode.JOIN)
     @JoinColumn(name = "ingrediente_id", nullable = false)
     private TbIngrediente ingrediente;
 
