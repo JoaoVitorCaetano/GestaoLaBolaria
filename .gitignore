@@ -34,3 +34,10 @@ build/
 
 ### Environment Variables ###
 .env
+
+### Dados Confidenciais / Receituário Interno (NÃO SUBIR PARA O GITHUB) ###
+src/main/java/com/laBolaria/gestao/config/ReceituarioDataSeeder.java
+src/main/resources/db/
+*receituario*
+*.pdf
+.DS_Store
